@@ -1,0 +1,304 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% \usepackage{xcolor}
+% tans
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large\bfseries
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\usepackage{xcolor}
+\definecolor{mycolor}{HTML}{1f7bbe}
+\titleformat{\section}{
+  \color{mycolor}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape \color{mycolor} \textbf Ashwin Satish} \\ \vspace{1pt}
+    Jabalpur, Madhya Pradesh \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9407363827
+ ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ashwinsatish0473@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/ashwin-satish-47879423a/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}  ~
+    \href{https://github.com/shadowashwin}{\raisebox{-0.2\height}\faGithub\ \underline{github}}
+    ~ \href{https://shadowashwin.github.io/portfolio_web_app//}{\raisebox{-0.2\height}\faLink\ \underline{PortFolio}}
+    % \vspace{-0pt}
+\end{center}
+
+\vspace{5pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: python , C\#, core JAVA} \\
+     \textbf{Server Technologies}{: Flask, .Net, Azure-functions(Blob \& Http)} \\
+     \textbf{Technologies/Frameworks}{: Bootstrap, Flutter, Ionic, .Net Entity Framework} \\
+     \textbf{APIs \& Libraries}{: Fetch API, Sci-kit learn, tensorflow, Opencv, Yolo v5, Torch, Numpy, Pandas} \\
+     \textbf{Database}{: SSMS, MySQL, Hive} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+% %-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Pageup Software Services Private Limited}{September 2023 -- December 2023}
+      {Android \& python Developer Intern}{Jabalpur, Madhya Pradesh}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a Shopping mobile application for iOS/Android using Ionic framework.}
+        \resumeItem{Worked with C\# .net Framework for migration of a Python Azure- blob \& http trigger- function to respective C\# Azure function.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Movie \& Book Recommendation Model - web app} $|$ \emph{Python, HTML, CSS, Bootstrap  }{\href{https://ayush-p28.github.io/my-portfolio/free.html}{\faLink}}}{December 2023}
+          \resumeItemListStart
+            \resumeItem{Python Libraries used : Flask, Numpy, Pandas, Sci-kit learn, ast, Porter stemmer, Count Vectorizer, Cosine Similarity.}
+            \resumeItem{Data Set : Movies - TMDB, Books - Kaggle}
+          \resumeItemListEnd
+          \vspace{-13pt}
+     
+          \resumeProjectHeading
+          {\textbf{Matrix Calculator - Web \& Android} $|$ \emph{HTML/CSS, Python, Bootstrap \& Flutter   }{\href{https://ayush-p28.github.io/Baderia_Global_Engineering_College_Jabalpur/}{\faLink}}}{April 2023}
+          \resumeItemListStart
+            \resumeItem{Web App : Python, Flask, Bootstrap, Torch .}
+            \resumeItem{Android App : Flutter-dart, Hive DB- to store history.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\textbf{Notes Maker (DiaryDigest) - Android app} $|$ \emph{Flutter-dart, Hive }{\href{https://ayush-p28.github.io/my-portfolio/hosp.html}{\faLink}}}{April 2023}
+          \resumeItemListStart
+            \resumeItem{Its a notes maker with both key-typing & voice-typing, with attractive and easy to use UI}
+            \resumeItem{Created 4 pages - splash, home, create, edit screens}
+          \resumeItemListEnd 
+            \vspace{-13pt}
+
+           \resumeProjectHeading
+          {\textbf{Portfolio Website} $|$ \emph{HTML/CSS, JavaScript, Tailwind CSS \& MS Azure   }{\href{https://ayush-p28.github.io/my-portfolio/}{\faLink}}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a  portfolio website to showcase my front end skills, work, projects, having page size less than 1.5mb}
+            \resumeItem{Applied the AOS(animation) JS library \& used fast loading formats for 30\% higher user engagement with animations.}
+            \resumeItem{Hosted this static web page on Microsoft Azure Static Web App with 10x faster accessibility.}
+          \resumeItemListEnd 
+          
+          \vspace{-13pt}
+          
+          % \resumeProjectHeading
+          % {\textbf{Calculator \& Calendar} $|$ \emph{HTML/CSS, JavaScript   }{\href{https://akp-calendar.web.app/}{\faLink}}}{November 2022}
+          % \resumeItemListStart
+            % \resumeItem{Deployed this static website on Google Firebase achieving a 99.9\% uptime rate.}
+          % \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{5pt}
+
+
+%
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajiv Gandhi Proudyogiki Vishwavidyalaya University -Current}{September 2021 -- May 2025}
+      {Bachelor in Computer Science \& Engineering -8.3 CGPA(till date)}{Jabalpur, Madhya Pradesh}
+      
+        % \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Stemfield International School [class 12th]}{March 2020 -- March 2021}
+      {Maths Science: 80\%}{Jabalpur, Madhya Pradesh}
+        % \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Stemfield International School [class 10th]}{March 2019 -- March 2020}
+      {Maths Science: 85\%}{Jabalpur, Madhya Pradesh}
+        \resumeSubHeadingListEnd
+   
+  % \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+
+\section{Acheivements}
+     \resumeItemListStart
+        \resumeItem{\textbf{LeetCode}{: \underline{\href{https://leetcode.com/Ayushp28/}{ayushpatel}}, Solved count-200}}
+     \resumeSubHeadingListEnd
+ \vspace{-20pt}
+     
+     \resumeItemListStart
+        \resumeItem{\textbf{HackerRank Java SE 7}{: \underline{\href{https://www.hackerrank.com/certificates/641d68adcb57/}{view certificate}}, JAVA(5 Star)}}
+     \resumeSubHeadingListEnd
+ \vspace{-20pt}
+ 
+     \resumeItemListStart
+        \resumeItem{\textbf{Microsoft Learn Students Ambassador Program (MLSA)}{: \underline{\href{https://mvp.microsoft.com/studentambassadors/certificate/e4d58502-f6bf-48b9-9a9b-41279db5fcb1}{view certificate}}}}
+     \resumeSubHeadingListEnd
+ \vspace{-20pt}
+     
+     % \resumeItemListStart
+     %    \resumeItem{\textbf{HackerRank MySQL 5.0 Developer}{: \underline{\href{https://www.hackerrank.com/certificates/b9032daeef5a/}{view certificate}}}}
+     % \resumeSubHeadingListEnd
+
+ % \vspace{-20pt}
+    
+     \resumeItemListStart
+    \resumeItem{\textbf{Hackathons}: \textbf{JIC Hackfest 4.0} (grand finale),\textbf{TGIH- Jabalpur} (grand finale, Microsoft Title Track Winner)}
+\resumeItemListEnd
+
+      \textcolor{black!0}{web development fullstack development software engineer architect analyst technical testing computer science developer scrum agile}
+\vspace{-20pt}
+\textcolor{black!0}{enterprise distributed system design data structure collaborate cloud application crm cloud computing c++ automated tests automated testing angular spring boot}
+\vspace{-30pt}
+\textcolor{black!0}{salesforce relational database real time react python problem solving object oriented design object oriented programming oops information technology}
+\vspace{-30pt}
+\textcolor{black!0}{web technologies verbal communication skills software development research and development leadership innovation data science work history experience software developer react networking decision making collaborative}
+\textcolor{black!0}{work collaboratively user requirements status product management product performance market legal execution entrepreneurial cross functional consumer}
+     
+     
+ \vspace{-20pt}
+
+
+\end{document}
